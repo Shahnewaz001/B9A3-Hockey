@@ -31,14 +31,14 @@
 </head>
 <body class="font-manrope">
     <header>
-        <nav class="w-[1170px] mx-auto">
+        <nav class="lg:w-[1170px] w-[500px] lg:mx-auto mx-0">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-sm hidden lg-flex dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                       <li><a>Home</a></li>
                       <li><a>About</a></li>
                       <li><a>Pages</a></li>
@@ -63,30 +63,38 @@
                 </div>
               </div>
         </nav>
-        <section class="carousel w-full mt-5 mb-20">
-            <section id="slide1" class="carousel-item relative w-full ">
-              <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-[1170px] mx-auto h-[550px]" />
-              <section class="absolute flex justify-between transform -translate-y-7/9 translate-x-56 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </section>
-            </section> 
-            <section id="slide2" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-[1170px] mx-auto" />
-              <section class="absolute flex justify-between transform -translate-y-7/9 translate-x-56 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </section>
+        <section class="carousel lg:w-full w-[500px] mt-5 mb-20">
+            <div class="carousel w-[1170px] lg:mx-auto relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/Images/1.png" class="w-full h-[600px]" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/Images/2.png" class="w-full h-[600px]" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+            </div>
             </section>
-        </section>
+            <section class="w-[1170px] mx-auto">
+                <div class="bg-black w-[570px] h-[165px] p-10 absolute lg:bottom-8 -bottom-1">
+                    <h3 class="text-white text-2xl">Meet all the heroes from the field</h3>
+                <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </section>
     </header>
     <main>
-        <section>
-            <h3 class="text-4xl font-extrabold w-[500px] mx-auto mb-3">Professional Hockeys Club</h3>
-            <p class="w-[600px] mx-auto font-medium text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <section class="w-[500px] lg:w-[1170px] lg:mx-auto ">
+            <h3 class="lg:text-4xl text-2xl text-center lg:text-center font-extrabold w-[500px] lg:mx-auto">Professional Hockeys Club</h3>
+            <p class="lg:w-[600px] w-[400px] mx-auto font-medium text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </section>
-        <section class="w-[1170px] mx-auto">
-            <section class="grid grid-cols-4 my-10">
+        <section class="lg:w-[1170px] w-[500px] lg:mx-auto">
+            <section class="grid lg:grid-cols-4 grid-cols-1 my-10">
                 <section class="flex flex-col justify-center items-center">
                         <img src="Images/Group 9 (1).svg" alt="">
                         <p class="text-3xl relative bottom-20 mb-0">87%</p>
@@ -114,12 +122,12 @@
             </section>
             </section>
         </section>
-        <section class="w-[1170px] mx-auto my-20">
+        <section class="lg:w-[1170px] w-[500px] mx-auto my-20">
             <div>
-                <h3 class="text-4xl font-extrabold w-[500px] mx-auto mb-3 text-center">Our New Prodacts</h3>
-            <p class="w-[600px] mx-auto font-medium text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <h3 class="lg:text-4xl text-2xl font-extrabold w-[500px] lg:mx-auto mb-3 text-center">Our New Prodacts</h3>
+            <p class="lg:w-[600px] w-[500px] lg:mx-auto font-medium text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-5">
                     <div class="hero min-h-7 bg-base-200 flex items-center justify-between my-10">
                         <div class="hero-content flex-col lg:flex-row">
                           <img src="/Images/5.png" class="rounded-lg shadow-2xl" />
@@ -292,14 +300,14 @@
             </section>
            </div>
 
-    <section class="w-[1170px] mx-auto">
+    <section class="lg:w-[1170px] w-[500px] mx-auto">
 
         <section>
-            <h3 class="text-4xl font-extrabold w-[500px] mx-auto mb-3 text-center">Program Sections</h3>
-            <p class="w-[600px] mx-auto font-medium text-center mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <h3 class="lg:text-4xl text-2xl font-extrabold w-[500px] mx-auto mb-3 text-center">Program Sections</h3>
+            <p class="lg:w-[600px] w-[400px] mx-auto font-medium text-center mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </section>
-        <section class="flex space-x-5">
-            <section class="hero rounded-2xl min-h-2.5" style="background-image:url('/Images/2.png');">
+        <section class="grid lg:grid-cols-2 grid-cols-1 gap-3 lg:space-x-5">
+            <section class="hero lg:rounded-2xl rounded-xl min-h-2.5" style="background-image:url('/Images/2.png');">
                 <section class="hero-overlay bg-opacity-50"></section>
                 <section class="hero-content text-start text-neutral-content">
                   <section class="max-w-md">
@@ -323,18 +331,13 @@
             </section>
         </section>
     </section>
-    <section class="w-[1170px] mx-auto my-20">
-        <section>
-
-        </section>
-    </section>
-    <section class="w-[1170px] mx-auto">
+    <section class="lg:w-[1170px] w-[500px] lg:mx-auto">
         <section>
             <section class="hero min-h-[450px] my-20 flex flex-row-reverse items-end" style="background-image:url('/Images/4.png');">
                 <section class="hero-overlay bg-opacity-40"></section>
                 <section class="hero-content text-start text-neutral-content">
                   <section class="max-w-md">
-                    <h1 class="mb-5 text-3xl font-extrabold">Professional Program</h1>
+                    <h1 class="mb-5 lg:text-3xl text-2xl font-extrabold">Professional Program</h1>
                     <p class="mb-5 font-medium text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
                         enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
                     <button class="p-3 bg-primary-color rounded-md text-start">Register Now!</button>
@@ -345,10 +348,10 @@
     </section>
     </main>
     <section>
-        <h3 class="text-4xl font-extrabold w-[500px] mx-auto mb-3 text-center">Clients Question</h3>
-            <p class="w-[600px] mx-auto font-medium text-center mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        <h3 class="lg:text-4xl text-2xl font-extrabold lg:w-[500px] w-[500px] mx-auto mb-3 text-center">Clients Question</h3>
+            <p class="lg:w-[600px] w-[400px] mx-auto font-medium text-center mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
     </section>
-    <section class="w-[1170px] mx-auto flex items-center space-x-10 justify-center">
+    <section class="lg:w-[1170px] w-[500px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center lg:space-x-10 gap-5 justify-center">
             <section>
                 <img src="/Images/11.png" alt="">
             </section>
@@ -409,13 +412,13 @@
             </section>
     </section>
     <section class="my-10">
-        <h3 class="text-4xl font-extrabold w-[500px] mx-auto mb-3 text-center">Get In Touch</h3>
-            <p class="w-[600px] mx-auto font-medium text-center mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <h3 class="lg:text-4xl text-2xl font-extrabold w-[500px] mx-auto mb-3 text-center">Get In Touch</h3>
+            <p class="lg:w-[600px] w-[400px] mx-auto font-medium text-center mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
     </section>
-    <section class="w-[1170px] mx-auto grid grid-cols-2 p-10 items-center">
+    <section class="lg:w-[1170px] w-[500px] mx-auto grid lg:grid-cols-2 grid-cols-1 p-10 items-center">
         <section class="w-[580px]">
             <section class="bg-orange-200 rounded-2xl w-[350px] h-[150px] grid grid-cols-1 my-5 items-center p-6">
-               <img class="w-[40px]" src="/Images/Group 1171275317.png" alt="">
+               <img class="lg:w-[40px] w-[20px]" src="/Images/Group 1171275317.png" alt="">
                <p>Phone Number : <br>
                 (+62) 123-321-543</p>
             </section>
@@ -431,7 +434,7 @@
             </section>
         </section>
         <section class="grid grid-cols-1">
-            <section class="grid grid-cols-2 gap-5">
+            <section class="grid lg:grid-cols-2 grid-cols-1 gap-5">
                 <label class="input input-bordered flex items-center gap-2">
                     <input type="text" class="grow" placeholder="Enter your full name"/>
                   </label>
@@ -446,13 +449,13 @@
                   </label>
             </section>
             <section>
-                <textarea class="textarea border-lime-400 w-[550px] h-[360px] mt-10"></textarea>
-                <button class="btn bg-primary-color w-[550px] text-white">Send Message</button>
+                <textarea class="textarea border-lime-400 lg:w-[550px] w-[400px] h-[360px] mt-10"></textarea>
+                <button class="btn bg-primary-color lg:w-[550px] w-[400px] text-white">Send Message</button>
             </section>
         </section>
     </section>
   
-    <section class="w-[1170px] mx-auto my-5">
+    <section class="lg:w-[1170px] w-[500px] mx-auto my-5">
         <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
             <h2 class="text-3xl font-extrabold">
                 Social Media
@@ -482,22 +485,22 @@
             </section>
           </section>
         </aside> 
-        <nav>
-          <h6 class="section-title text-white">Company</h6> 
-          <a class="link link-hover text-white">About us</a>
-          <a class="link link-hover text-white">Design</a>
-          <a class="link link-hover text-white">Leadership</a>
-          <a class="link link-hover text-white">Careers</a>
-          <a class="link link-hover text-white">News & Article</a>
-          <a class="link link-hover text-white">Legal Notice</a>
-        </nav> 
-        <nav>
-          <h6 class="section-title text-white">Support</h6> 
-          <a class="link link-hover text-white">Help Center</a>
-          <a class="link link-hover text-white">Contact</a>
-          <a class="link link-hover text-white">FAQ</a>
-          <a class="link link-hover text-white">ContactUs</a>
-        </nav> 
+            <nav>
+                <h6 class="section-title text-white">Company</h6> 
+                <a class="link link-hover text-white">About us</a>
+                <a class="link link-hover text-white">Design</a>
+                <a class="link link-hover text-white">Leadership</a>
+                <a class="link link-hover text-white">Careers</a>
+                <a class="link link-hover text-white">News & Article</a>
+                <a class="link link-hover text-white">Legal Notice</a>
+              </nav> 
+              <nav>
+                <h6 class="section-title text-white">Support</h6> 
+                <a class="link link-hover text-white">Help Center</a>
+                <a class="link link-hover text-white">Contact</a>
+                <a class="link link-hover text-white">FAQ</a>
+                <a class="link link-hover text-white">ContactUs</a>
+              </nav> 
         <nav>
           <h6 class="section-title text-white">Services</h6> 
           <a class="link link-hover text-white">Academy</a>
